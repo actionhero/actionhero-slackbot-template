@@ -8,6 +8,8 @@ I am an example project showing how to integrate ActionHero and Slack.  I listen
 
 I use the ActionHero plugin [ah-slack-plugin](https://github.com/actionhero/ah-slack-plugin)
 
+![image](https://raw.githubusercontent.com/actionhero/actionhero-slackbot-template/master/image.png)
+
 ## To install:
 (assuming you have [node](http://nodejs.org/) and NPM installed)
 
