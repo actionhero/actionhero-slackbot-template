@@ -1,24 +1,15 @@
 ---
 machine:
-  environment:
-    maxMemoryAlloted: 500
   services:
     - redis
   node:
     version: 8
 
+dependencies:
+  pre:
+    - npm install -g npm
+
 test:
   override:
     - "echo Node Version: `node --version` && npm test":
         parallel: true
-
-general:
-  branches:
-    ignore:
-      - gh-pages
-
-deployment:
-  production:
-    branch: master
-    commands:
-      - bin/deploy-docs
